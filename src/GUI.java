@@ -146,7 +146,7 @@ public final class GUI {
     }
     
     public JLabel addCardToPanel(Card c, int xAxis, int yAxis) {
-        ImageIcon pic = new ImageIcon("/home/juliano/NetBeansProjects/Blackjack/src/PNG/" + c.getRank() + c.getSuit() + ".png");
+        ImageIcon pic = new ImageIcon(getClass().getResource("/PNG/" + c.getRank() + c.getSuit() + ".png"));
         JLabel card = new JLabel(pic);
 
         card.setVisible(true);
